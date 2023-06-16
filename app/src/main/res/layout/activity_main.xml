@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:foregroundTint="#FFF9F9"
+    android:foregroundTintMode="src_in"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/crown_image"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/word12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/marko_one"
+        android:onClick="onClick"
+        android:text="Word \nJumble"
+        android:textAlignment="center"
+        android:textColor="#7DF9FF"
+        android:textColorHighlight="#009C2626"
+        android:textColorHint="#00F1E3E3"
+        android:textColorLink="#009A4E4E"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#DDD163"
+        android:fontFamily="@font/marko_one"
+        android:foregroundTint="@android:color/holo_green_light"
+        android:foregroundTintMode="src_over"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Word"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#0B0B0B"
+        android:textColorLink="#121111"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFF4F4"
+        android:backgroundTintMode="screen"
+        android:drawableTint="#CCC4C4"
+        android:ems="10"
+
+        android:fontFamily="@font/marko_one"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="284dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/CLUE"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF200"
+        android:fontFamily="@font/marko_one"
+        android:text="Clue"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+
+    <EditText
+        android:id="@+id/editTextText2"
+
+        android:layout_width="383dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#FFFDFD"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:fontFamily="@font/marko_one"
+        android:foregroundTint="#FFFFFF"
+        android:inputType="text"
+        android:shadowColor="#E6DBDB"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gamebtn"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#5D3FD3"
+        android:insetLeft="30dp"
+        android:insetRight="30dp"
+        android:paddingStart="20dp"
+        android:text="START"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        android:textColorHighlight="#9C27B0"
+        android:textSize="40dp"
+        app:iconGravity="end"
+        app:iconPadding="10dp"
+        app:iconSize="50dp"
+        app:iconTint="#FFE55C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#BA1515"
+        app:strokeColor="#FFC107" />
+    </LinearLayout>
+
+</ScrollView>
